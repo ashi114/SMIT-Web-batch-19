@@ -1,0 +1,132 @@
+div.box {
+    height: 500px;
+    background-color: #bbbbaa;
+    overflow-y: auto;
+    min-width: 300px;
+}
+
+div.bord {
+
+    /* border: 5px solid red; */
+    border-left: 5px solid yellowgreen;
+    padding: 5px;
+}
+
+.digit-2-1,
+.digit-2-2,
+.digit-3-1,
+.digit-3-2,
+.digit-4-1,
+.digit-4-2,
+.digit-5-1,
+.digit-5-2,
+.digit-6-1,
+.digit-6-2,
+.digit-7-1,
+.digit-7-2,
+.digit-8-1,
+.digit-8-2,
+.digit-9-1,
+.digit-9-2 {
+    height: 100px;
+    width: 100px;
+    margin-right: 12px;
+}
+
+.digit-10-1,
+.digit-10-2 {
+    height: 200px;
+    width: 100px;
+    margin-right: 12px;
+}
+
+
+
+.num-2,
+.num-3,
+.num-4,
+.num-5,
+.num-6,
+.num-7,
+.num-8,
+.num-9,
+.num-10-1,
+.num-10-2 {
+
+    display: inline-block;
+}
+
+.digit-2-1 {
+    border: 2px solid blue;
+    border-left: none;
+}
+
+.digit-2-2 {
+    border-left: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+.digit-3-1,
+.digit-3-2 {
+    border: 2px solid blue;
+    border-left: none;
+
+}
+
+.digit-4-1 {
+    border: 2px solid blue;
+    border-Top: none;
+}
+
+.digit-4-2 {
+    border-right: 2px solid blue;
+}
+
+.digit-5-1 {
+    border: 2px solid blue;
+    border-right: none;
+}
+
+.digit-5-2 {
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+.digit-6-1 {
+    border: 2px solid blue;
+    border-right: none;
+}
+
+.digit-6-2 {
+    border: 2px solid blue;
+}
+
+.digit-7-1 {
+    border: 2px solid blue;
+    border-left: none;
+}
+
+.digit-7-2 {
+    border-right: 2px solid blue;
+}
+
+.digit-8-1,
+.digit-8-2 {
+    border: 2px solid blue;
+}
+
+.digit-9-1 {
+    border: 2px solid blue;
+}
+
+.digit-9-2 {
+    border-right: 2px solid blue;
+}
+
+.digit-10-1 {
+    border-right: 2px solid blue;
+}
+
+.digit-10-2 {
+    border: 2px solid blue;
+}
