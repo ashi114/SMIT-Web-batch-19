@@ -8,3 +8,5 @@ This Commit is part of my learning at Saylani Mas IT Training, in this training 
 --- CSS Chapter of Boxes
 --- Second Assingment of CSS - Making numbers from 2 to 10 using CSS with Boxes
 --- Third Assingment of CSS - Making Different Box Shadows in a same Box
+--- CSS Chapters of List Style Type and Layouts
+--- Assingment 3 of CSS - Making a Sticky Nav Bar for javed Nihari website

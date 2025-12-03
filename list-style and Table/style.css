@@ -1,0 +1,44 @@
+#myUniqueList li {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+ol {
+  list-style: lower-roman;
+}
+
+/* #myUniqueList li {
+  list-style-position: inside;
+} */
+
+#myUniqueList li {
+  list-style-position: inside circle;
+}
+
+table {
+  border: 2px solid black;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  empty-cells: hide;
+  border-collapse: collapse;
+  border-spacing: 5px 15px;
+
+}
+
+td {
+  border: 1px solid red;
+}
+
+tr {
+  border: 2px solid black;
+}
+
+input {
+  margin-top: 10px;
+  color: #444444;
+  text-shadow: 0px 1px 1px #ffffff;
+  border-bottom: 2px solid #b2b2b2;
+  background-color: #b9e4e3;
+  cursor:url("./pin.png"),progress;
+}
