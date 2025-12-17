@@ -1,0 +1,145 @@
+.box {
+    height: 250px;
+    width: 250px;
+    background-color: bisque;
+    position: absolute;
+    left: 0;
+    animation-name: move_left;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+
+@keyframes move_left {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(50% - 250px);
+    }
+
+}
+
+.box-2 {
+    height: 250px;
+    width: 250px;
+    background-color: bisque;
+    position: absolute;
+    right: 0;
+    animation-name: move_right;
+    animation-duration: 4s;
+    animation-delay: 4s;
+
+}
+
+@keyframes move_right {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: calc(50% - 250px);
+    }
+
+}
+
+.pulse {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 100%;
+    margin: 4em;
+    animation: pulse 2s infinite alternate ease-in-out;
+
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(2);
+    }
+
+    to {
+        transform: scale(0.5);
+    }
+
+}
+
+/* .zig-zag {
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    border-radius: 100%;
+    position: absolute;
+    animation-name: zig-zag;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes zig-zag {
+
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    16% {
+        top: calc(100% - 150px);
+        left: 16vw;
+    }
+
+    32% {
+        top: 0;
+        left: 32vw;
+    }
+
+    48% {
+        top: calc(100% - 150px);
+        left: 48vw;
+    }
+
+    64% {
+        top: 0;
+        left: 64vw;
+    }
+
+    82% {
+        top: calc(100% - 150px);
+        left: 82vw;
+    }
+
+    100% {
+        top: 0;
+        left: calc(100% - 150px);
+    }
+
+} */
+
+.road{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.road img.car{
+    position: absolute;
+    z-index: 1;
+    width: 25em;
+    bottom: 0;
+    left: 35%;
+    animation: moving-forward 2s linear forwards;
+}
+
+@keyframes moving-forward {
+    from{
+        bottom: 0;
+    }
+
+    to{
+        bottom: 10em;
+        transform: scale(0.1);
+    }
+}

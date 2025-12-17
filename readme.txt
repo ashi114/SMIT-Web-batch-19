@@ -10,3 +10,4 @@ This Commit is part of my learning at Saylani Mas IT Training, in this training 
 --- Third Assingment of CSS - Making Different Box Shadows in a same Box
 --- CSS Chapters of List Style Type and Layouts
 --- Assingment 3 of CSS - Making a Sticky Nav Bar for javed Nihari website
+--- using Animation in CSS to create effects
