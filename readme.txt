@@ -11,3 +11,4 @@ This Commit is part of my learning at Saylani Mas IT Training, in this training 
 --- CSS Chapters of List Style Type and Layouts
 --- Assingment 3 of CSS - Making a Sticky Nav Bar for javed Nihari website
 --- using Animation in CSS to create effects
+--- using Media Queries for creating responsive webpages
