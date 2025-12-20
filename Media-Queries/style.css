@@ -22,20 +22,40 @@
     }
 } */
 
-div{
-    height: 40px;
-    width: 100px;
+.location {
     background-color: yellow;
+    padding: 10px;
     border-radius: 0.5em;
     font-family: sans-serif;
     font-size: small;
     text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
     color: red;
-    display: inline-block
+    display: inline-block;
+    margin-right: 5px;
 }
 
+.contact {
+    display: inline-block;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: small;
+    color: red;
+    font-weight: bold;
+}
 
-ul{
+.shopping{
+    position: Fixed;
+    top: 20px;
+    right: 10px;
+    color: red;
+}
+
+ul {
     background-color: yellow;
     display: flex;
     justify-content: space-around;
@@ -45,13 +65,21 @@ ul{
     color: rgb(51, 167, 167);
 }
 
-li{
+li {
     display: inline-block;
     padding: 4px;
     cursor: pointer;
 }
 
-li:hover{
+li:hover {
     background-color: red;
     transform: translateY(2px);
+    border-radius: 0.2em;
+}
+
+img{
+    height: 58px;
+    position: fixed;
+    left: calc(50% - 30px);
+    top: 0;
 }
