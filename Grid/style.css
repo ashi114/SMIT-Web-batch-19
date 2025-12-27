@@ -1,0 +1,31 @@
+div.box {
+    /* height: 250px;
+    width: 250px; */
+    background-color: green;
+    border: 1px solid red;
+    font-size: 40px;
+}
+
+div.parent{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 4px;
+    height: 100vw;
+    background-color: aqua;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 4fr 2fr;
+}
+
+.Header{
+    background-color: red;
+}
+
+.Content{
+    background-color: blue;
+}
+
+.Footer{
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
