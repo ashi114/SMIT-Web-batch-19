@@ -14,3 +14,5 @@ This Commit is part of my learning at Saylani Mas IT Training, in this training 
 --- using Media Queries for creating responsive webpages
 --- using Flex to make responsives
 --- understanding grid in CSS
+--- understanding the framework of bootstrap
+--- Basic Javascript
