@@ -1,156 +1,299 @@
-// let a = 3
-// let b = 4
+// A Smarter Way to Learn Java Script
 
-// console.log("a + b =", a + b)
-// console.log("a - b =", a - b)
-// console.log("a * b =", a * b)
-// console.log("a / b =", a / b)
-// console.log("a % b =", a % b)
-// console.log("a ** b =", a ** b)
+// let myName = "My name is Arshad"
+// alert(myName)
 
-//pre and post increment
+// let a = 5;
+// let b = 6;
 
-// a++
-// console.log(a)
+// let c = a + b
+// console.log(c)
 
-// console.log(a++)
+// let num1 = 4
+// let num2 = 5
 
-// Assingment Operators
+// console.log("4" - num2)
 
-// a += 1
+// myName = prompt("Please your name")
 
-// console.log(a)
+// if(myName === "Arshad"){
+//     alert("Correct Answer")
+// }else {
+//     alert("Wrong Name")
+// }
 
-// Comparison Operators
+// let correctName = "Vatican"
+// let userName = prompt("Please enter your city")
 
-// let a = 3
+// if(correctName === userName){
+//     alert("Name Matched")
+// }
+
+// else if(userName === "Rome"){
+//     alert("Wrong but close")
+// }
+
+// else{
+//     alert("Wrong answer")
+// }
+
+// let age = +prompt("Please enter your age")
+// let gender = prompt("Please enter your gender")
+
+// if(age > 18 && age <= 65 && gender=="male"){
+//     alert("You can come for the try out")
+// } else{
+//     alert("Not eligible")
+// }
+
+// let a = 4
 // let b = 5
+// let c = 1
+// let d = 6
+// let g = 9
+// let h = 8
+// let e;
 
-// console.log("3 >= 5 && a === b ", a >= b && a === b)
-// console.log("3 < 5 || a === b ", a < b || a === b)
-
-// Conditional Statements
-
-// let mode = 'light'
-// let color
-
-// if(mode == "dark"){
-//     color = "blue"
-// }
-
-// if(mode == "light"){
-//     color = "yellow"
-// }
-
-// console.log(color)
-
-// Even or Odd
-
-// let num = 7
-
-// if(num % 2 == 0){
-//     console.log(num, "is even")
-// }
-// else {
-//     console.log(num, "is odd")
-// }
-
-// using Turnary operator
-
-// let age = 15
-
-// let result = age >= 18 ? "adult" : "not adult"
-
-// console.log(result)
-
-// let myArray = [1,2,3]
-
-// let myNumber = Number(prompt("Please enter your number"))
-
-// myArray.push(myNumber)
-
-// alert(myArray)
-
-// If / else practice
-
-// let age = 50;
-// let gender = "Female"
-
-// if (age < 18 && gender == "Female") {
-//     console.log("Under Aged and womens are not allowed")
-// } else if (age >= 45 && gender == "Female") {
-//     console.log("Over aged and womens not allowed")
+// if (c === d) {
+//     if (a === b) {
+//         e = 7
+//     }
+//     else if (g === h) {
+//         e = 9
+//     }
+//     else {
+//         e = 10
+//     }
 // } else {
-//     console.log("Approved")
+//     e = 10
 // }
 
-// Loops
+// console.log(e)
 
-// print of Loops
+// let cities = ["Atlanta", "Rome", "Karachi"]
+// console.log(cities[2])
 
-// for (let i=0; i<=10; i++){
-//     console.log("Startig Loops")
+// let pets = []
+// pets[0] = "Dog"
+// pets[1] = "Cat"
+
+// console.log(pets)
+// let array1= ["arshad","ali","Muhammad"]
+
+// for(let i = 0; i<array1.length;i++){
+//     console.log(`Hello my name is ${array1[i]}`)
 // }
 
-// console.log("Loop Ended")
+//  using flags
 
-// Sum of Numbers
+// let matchFound = false
 
-// let sum = 0
-// let n = 10
-
-// for (let i = 0; i <= n; i++) {
-//     sum = sum + i
-
-// }
-// console.log(sum)
-
-// While Loop
-// let i = 0
-// while (i <= 5){
-//     console.log(i)
-//     i++
-// }
-
-// Do While
-// let i = 20
-// do {
-//     console.log("Do While Loop");
-//     i++;
-// }while(i<=10)
-
-// for off loop
-// let str = "Saylani"
-
-// for(let i of str){
-//     console.log("i =",i)
-// }
-
-// for in loop
-// let student = {
-//     name: "Arshad",
-//     age: 30,
-//     cgpa: 3.4,
-//     passed: true
-// }
-
-// for (let key in student){
-//     console.log("key==",key,"value==",student[key])
-// }
-
-// Print all Numbers from 0 to 100
-// for(let i =0;i<=100;i++){
-//     if(i%2==0){
-//         console.log(i)
+// for(let i = 0; i<cities.length;i++){
+//     if(cities[i]==="Vatican"){
+//         matchFound=true
+//         console.log("City Found")
 //     }
 // }
 
-// let number = 25;
-// let input = Number(prompt("please enter your number"))
-
-// while(number !== input){
-//     let input = Number(prompt("please enter the matching number"))
-//     Break
+// if(matchFound === false){
+//     console.log("City is not Found")
 // }
 
-// console.log("Correct Number selected")
+// let firstName = ["Muhammad "]
+// let lastName = ["Arshad", "Ali", "Siddiqui"]
+
+// let fullName = [];
+
+// for (let i = 0; i < firstName.length; i++) {
+//     for (let j = 0; j < lastName.length; j++) {
+//         fullName.push(firstName[i] + lastName[j])
+//     }
+
+// }
+
+// console.log(fullName)
+
+
+// let cleanCities = ["lahore", "peshawar", "hyderabad"]
+
+// let citiesTocheck = prompt("Please Enter Your City")
+// citiesTocheck = citiesTocheck.toLowerCase()
+
+// for (let i = 0; i < cleanCities.length; i++) {
+//     if (citiesTocheck == cleanCities[i]) {
+//         alert("Your City is the Cleanest")
+//     }
+//     else {
+//         alert("Polluted City")
+//     }
+// }
+
+// let firstCharac = citiesTocheck.slice(0,1)
+// firstCharac = firstCharac.toUpperCase()
+// let otherCharac = citiesTocheck.slice(1)
+// otherCharac = otherCharac.toLowerCase()
+
+// let fullName = firstCharac + otherCharac
+// console.log(fullName)
+
+// let countWords = "This is a Beautiful Day"
+// let count = 0
+
+// for (let i = 0; i < countWords.length; i++) {
+//     if (countWords[i] == " "){
+//         count++
+//     }
+// }
+
+// console.log(count)
+
+
+// let text = "even in the darkest depths of World War II"
+// let firstChar = text.indexOf("World War II")
+// console.log(firstChar)
+
+// for (let i = 0; i < text.length; i++) {
+//     if(i == firstChar){
+//         text = text.slice(0,firstChar) + "The Second World War II" + text.slice(firstChar + 12)
+//     } 
+// }
+// console.log(text)
+
+// let text = "To be or not to be"
+// lastChar = text.lastIndexOf("be")
+
+// console.log(lastChar)
+
+// newText = text.replace("World War II","The Second World War II")
+// console.log(newText)
+
+// const num = 0.548899
+// let avgNum = Math.round(num)
+// let avgNum1 = Math.floor(num)
+// let avgNum2 = Math.ceil(num)
+
+// console.log(avgNum,avgNum1,avgNum2)
+
+// const random = Math.random()
+// const improvedNumber = Math.floor(random * 6)
+// console.log(improvedNumber)
+
+// const ageInput = prompt("Please Enter Your Age")
+
+// const validAge = parseInt(ageInput)
+
+// console.log(validAge,typeof(validAge))
+
+/// Converting to Number and Numbers to String
+
+// const varString = "36.55555"
+// const varNumber = Number(varString)
+
+// const varStrtoNum = varNumber.toString()
+
+// console.log(varString,varNumber,varStrtoNum,typeof(varString),typeof(varNumber),typeof(varStrtoNum))
+// const totalFixed = varNumber.toFixed()
+// console.log(totalFixed)
+
+// Dates (important in JS)
+
+// const rightNow = new Date()
+// console.log(rightNow)
+// console.log(rightNow)
+
+// const nowDay = rightNow.getDay()
+// console.log(nowDay)
+
+// const nowMonth = rightNow.getMonth()
+// console.log(nowMonth)
+
+// const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+// const today = rightNow.getDay()
+
+// const nameOfToday = dayNames[today]
+
+// console.log(nameOfToday)
+
+// const currYear = rightNow.getFullYear()
+// console.log(currYear)
+
+// const currTime = rightNow.getTime()
+// console.log(currTime)
+
+// const doomsDay = new Date("June 30, 2035")
+// const doomsTime = doomsDay.getTime()
+// console.log(doomsTime)
+
+// rightNow.setMonth(12)
+// console.log(rightNow)
+
+/// Functions
+
+// function tellTime(){
+//     let newDate = new Date()
+//     let newHour = newDate.getHours()
+//     let newMinutes = newDate.getMinutes()
+
+//     console.log(`Current Time is: ${newHour}:${newMinutes}`)
+// }
+
+// tellTime()
+
+// function greetUser(greeting){
+//     alert(greeting)
+// }
+
+// greetUser("Hi There")
+
+// const almostAMil = 999999
+// console.log(almostAMil)
+
+// let orderTotal;
+
+// function CalcTot(mercTotal) {
+//     if(mercTotal>100){
+//         orderTotal=mercTotal
+//     }
+//     else if(mercTotal<50){
+//         orderTotal=mercTotal+5
+//     }
+//     else{
+//         orderTotal = mercTotal + 5 + ((mercTotal-50)*0.03)
+//     }
+//     console.log(orderTotal)
+// }
+
+// CalcTot(70)
+
+// Building a Basic Currency Converter
+
+// function currentConverter(amount, exRate = 285) {
+//     const value = +prompt("Please Enter your Amount")
+//     if (isNaN(value)) {
+//         alert("Please Enter Numerical Value")
+//     }
+//     else {
+//         convertedValue = value / exRate
+//     }
+
+//     console.log(convertedValue)
+// }
+
+// currentConverter(285)
+
+dayOfWeek = "Mon"
+
+switch (dayOfWeek) {
+    case "Sun":
+        alert("Whippy");
+        break
+    case "Sat":
+        alert("Weekend");
+        break
+    case "Fri":
+        alert("Last Day of Work");
+        break
+    default:
+        alert("Let's Get Out")
+}
