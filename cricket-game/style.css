@@ -58,3 +58,8 @@ cursor: pointer;
     margin: 2px;
     cursor: pointer;
 }
+
+#play-wrapper>p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
