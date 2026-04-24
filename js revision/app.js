@@ -138,3 +138,106 @@
 // }
 
 // Functions
+
+// function myFunc(x, y) {
+
+//     console.log(x + y)
+// }
+
+// myFunc(2, 3)
+
+// arrow function
+
+// const sumFunction = (x, y) => {
+//     return x + y
+// }
+
+// sumFunction(2,3)
+
+//  write a function to extract count of vowels from a Strings
+
+// function countVowels(str) {
+//   let count = 0;
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// }
+
+// countVowels("saylani");
+// countVowels("arshad");
+
+//  use arrow function to do the same task
+
+// const countVowels = (str) => {
+//   let count = 0;
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// }
+
+// countVowels("saylani");
+// countVowels("arshad");
+
+// For Each -- Call Back Function
+
+// arr = ["karachi", "Lahore", "Peshawar"];
+
+// arr.forEach((val) => {console.log(val)});
+
+// arr.forEach((element,idx,arr) => {
+//    console.log(element.toUpperCase(),idx,arr)
+// });
+
+//  Calculating the square of every element of an array using the for each method
+
+// let nums = [11, 22, 33];
+
+// const squareElement = (num) => {
+//   console.log(num ** 2);
+// };
+
+// nums.forEach(squareElement)
+
+// Array.map creates a new array
+
+// let nums = [11, 22, 33, 44, 55];
+
+// let newArray = nums.map((val) => {return val});
+
+//  Filter Function of Array
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+
+// let filterArray = arr.filter((val) => {return val % 2 == 0});
+
+// reduce method in arrays
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const output = arr.reduce((res, curr) => {return res + curr});
+
+// to find the largest number
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const output = arr.reduce((res, curr) => {
+//   return res > curr ? res : curr;
+// });
