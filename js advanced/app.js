@@ -171,11 +171,167 @@ class Car {
 
 // instantiate the class
 
-const car1 = new Car("Toyota", "Corolla", 2021);
-const car2 = new Car("Suzuki", "Swift", 2022);
+// const car1 = new Car("Toyota", "Corolla", 2021);
+// const car2 = new Car("Suzuki", "Swift", 2022);
 
-console.log(car1.getinfo())
-console.log(car1.carStaring())
+// console.log(car1.getinfo())
+// console.log(car1.carStaring())
 
-console.log(car2.getinfo())
-console.log(car2.carStaring())
+// console.log(car2.getinfo())
+// console.log(car2.carStaring())
+
+// Call backs, Promise and asunc function
+
+function printString(string) {
+  setTimeout(() => {
+    console.log(string);
+  }, 5000);
+}
+
+// function printAll(){
+//     printString("A")
+//     printString("B")
+//     printString("C")
+// }
+
+// printAll()
+
+// function greet(name) {
+//   console.log("Hello" + name + "!");
+// }
+
+// function processedName(cb) {
+//   setTimeout(
+//     () => {
+//       const name = " Arshad";
+//       cb(name)
+//     },
+//     5000,
+//   );
+//   return name;
+// }
+
+// processedName(greet);
+
+// Call Back Hell - nesting too many callbacks
+
+// function getIngredients(callback) {
+//   setTimeout(() => {
+//     console.log("Get Ingredients");
+//     callback();
+//   }, 1000);
+// }
+
+// function chopVegetable(callback) {
+//   setTimeout(() => {
+//     console.log("Chop Vegetable");
+//     callback();
+//   }, 1000);
+// }
+
+// function cookFood(callback) {
+//   setTimeout(() => {
+//     console.log("Cook Dinner");
+//     callback();
+//   }, 1000);
+// }
+
+// function serveDinner() {
+//   setTimeout(() => {
+//     console.log("Dinner Serve");
+//   }, 1000);
+// }
+
+// getIngredients(function () {
+//   chopVegetable(function () {
+//     cookFood(serveDinner);
+//   });
+// });
+
+// Promise -- Better than call back
+
+// function printString(string) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(string);
+//       resolve();
+//     }, 1000);
+//   });
+// }
+
+// Promise Chaining
+
+// function printAll() {
+//   printString("A").then(() => {
+//     printString("B").then(() => {
+//       printString("C");
+//     });
+//   });
+// }
+
+// printAll();
+
+// Solving the ingredients example with Promise
+
+function getIngredients() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Ingredients Done");
+      resolve();
+    }, 1000);
+  });
+}
+
+function chopVegetables() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Vegetables Chopped");
+      resolve();
+    }, 1000);
+  });
+}
+
+function cookedFood() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Food Cooked");
+      resolve();
+    }, 1000);
+  });
+}
+
+function dinnerServed() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Dinner Served");
+      resolve();
+    }, 1000);
+  });
+}
+
+// Promise Chaining
+
+// getIngredients()
+//   .then(() => chopVegetables())
+//   .then(() => cookedFood())
+//   .then(() => dinnerServed());
+
+// using async to solve the above problem
+
+async function makeDinner() {
+  try {
+    const ingredients = await getIngredients();
+
+    const vegetables = await chopVegetables();
+
+    const food = await cookedFood();
+
+    const dinner = await dinnerServed();
+
+    console.log("Enjo your meal");
+  } catch (error) {
+    console.log("Something went wrong");
+  }
+}
+
+makeDinner();
